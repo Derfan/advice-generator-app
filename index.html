@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Advice generator app</title>
+</head>
+<body>
+  <div class="content">
+    <div class="surface">
+      <h3 class="surface__title" data-advice-title></h3>
+      <p class="surface__text" data-advice-text></p>
+      <img
+        class="surface__separator"
+        srcset="images/pattern-divider-mobile.svg 480w, images/pattern-divider-desktop.svg 800w"
+        sizes="(max-width: 600px) 480px, 800px"
+        src="images/pattern-divider-desktop.svg"
+        alt="separator"
+      />
+      <button class="surface__button" data-advice-button>
+        <img src="images/icon-dice.svg" alt="button-icon" />
+      </button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/b-medvediev/">Borys Medvediev</a>.
+  </div>
+
+  <script src="index.js" defer></script>
+</body>
+</html>

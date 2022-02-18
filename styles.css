@@ -1,0 +1,103 @@
+html {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(221, 20%, 16%);
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+
+    padding: 20px;
+}
+
+.surface {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateY(10vh);
+    padding: 40px 20px 0;
+    background-color: var(--dark-grayish-blue);
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.surface__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: var(--neon-green);
+}
+
+.surface__text {
+    margin: 20px 0;
+    font-size: 28px;
+    color: white;
+}
+
+.surface__separator {
+    width: 100%;
+}
+
+.surface__button {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    transform: translateY(50%);
+    background-color: var(--neon-green);
+
+    width: 50px;
+    height: 50px;
+
+    transition: all .1s ease-in;
+}
+
+.surface__button:hover {
+    box-shadow: 0 0 10px var(--neon-green);
+}
+
+.surface__button:active {
+    box-shadow: 0 0 20px var(--neon-green);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+    .surface {
+        max-width: 500px;
+        margin: 0 auto;
+        box-shadow: 10px 30px 0 60px #212530;
+    }
+}
