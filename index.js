@@ -26,4 +26,4 @@ async function renderAdvice() {
 
 elements.button.addEventListener('click', renderAdvice);
 
-renderAdvice();
+// renderAdvice();
